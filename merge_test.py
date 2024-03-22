@@ -19,7 +19,5 @@ test_merged = pd.concat([test_df, features_df.iloc[test_indices[:, 0], 2:].reset
 
 # Проверка результатов
 print("Тестовая выборка после объединения с признаками:")
-print(test_merged.columns)
-
 
 test_merged.to_csv('test_merged.csv', index=False)
