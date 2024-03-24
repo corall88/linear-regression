@@ -68,7 +68,7 @@ python merge_train.py
 ```sh
 python merge_test.py
 ```
-4. Обучите модель запустив файл train.py, который сохранит ее в файл **best_model.h5**
+4. Обучите модель запустив файл train.py, который сохранит ее в файл **best_model.keras**
 ```sh
 python train.py
 ```
