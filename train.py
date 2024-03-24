@@ -44,7 +44,7 @@ n_features = data[4]
 
 model = build_model(n_features, LEARNING_RATE)
 
-checkpoint_callback = ModelCheckpoint(filepath='best_model.h5', 
+checkpoint_callback = ModelCheckpoint(filepath='best_model.keras', 
                                       monitor='val_loss', 
                                       save_best_only=True,
                                       verbose=0)
