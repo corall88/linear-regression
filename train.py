@@ -1,11 +1,8 @@
-import numpy as np
 import pandas as pd
 from keras.models import Sequential
-from keras.layers import Dense, Dropout
+from keras.layers import Dense
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-from keras.regularizers import l1_l2
 from tensorflow.keras.callbacks import ModelCheckpoint
 
 EPOCHS = 180
