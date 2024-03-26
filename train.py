@@ -1,6 +1,6 @@
 import pandas as pd
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense, Input
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.callbacks import ModelCheckpoint
@@ -21,7 +21,8 @@ def prepare_data(filename):
 
 def build_model(n_features, learning_rate):
     model = Sequential([
-    Dense(512, input_dim=n_features, activation='relu'),
+    Input(shape=(n_features,)),
+    Dense(512, activation='relu'),
     Dense(256, activation='relu'),
     Dense(128, activation='relu'),
     Dense(64, activation='relu'),
